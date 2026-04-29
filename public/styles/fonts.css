@@ -1,0 +1,45 @@
+/* SpaceX Font System - D-DIN Typography */
+
+/* Using Roboto Condensed as D-DIN alternative (similar industrial geometric aesthetic) */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap');
+
+/* Fallback: If D-DIN fonts are available locally, uncomment below */
+/*
+@font-face {
+  font-family: 'D-DIN';
+  src: url('/fonts/D-DIN.woff2') format('woff2'),
+       url('/fonts/D-DIN.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'D-DIN';
+  src: url('/fonts/D-DIN-Bold.woff2') format('woff2'),
+       url('/fonts/D-DIN-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+*/
+
+/* SpaceX Typography Scale */
+:root {
+  --font-display: 'Roboto Condensed', Arial, Verdana, sans-serif;
+  --font-body: 'Roboto Condensed', Arial, Verdana, sans-serif;
+
+  /* Font Sizes - SpaceX Scale */
+  --text-display-hero: 3.00rem;    /* 48px */
+  --text-body: 1.00rem;            /* 16px */
+  --text-nav-bold: 0.81rem;        /* 13px */
+  --text-nav: 0.75rem;             /* 12px */
+  --text-caption-bold: 0.81rem;    /* 13px */
+  --text-caption: 0.75rem;         /* 12px */
+  --text-micro: 0.63rem;           /* 10px */
+
+  /* Letter Spacing - SpaceX Identity */
+  --tracking-display: 0.96px;
+  --tracking-nav: 1.17px;
+  --tracking-micro: 1px;
+}

@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git remote rm:*)",
+      "Bash(git remote add:*)",
+      "Bash(git commit:*)",
+      "Bash(git branch:*)",
+      "Bash(git push:*)",
+      "Bash(git fetch:*)",
+      "Bash(ls -la /d/Seatek/BigBanana-AI-Director/*.json)",
+      "Bash(ls -la /d/Seatek/BigBanana-AI-Director/components/StageDirector/*.tsx)",
+      "Bash(wc -l /d/Seatek/BigBanana-AI-Director/components/*.tsx)",
+      "Bash(grep -r \"font-family\\\\|font-sans\\\\|font-mono\" /d/Seatek/BigBanana-AI-Director/index.html /d/Seatek/BigBanana-AI-Director/public/styles/*.css)",
+      "Bash(find /d/Seatek/BigBanana-AI-Director/components -name \"*.tsx\" -exec grep -l \"bg-\\\\[var\\(--bg-\" {} \\\\;)",
+      "Bash(grep -r \"card\\\\|Card\" /d/Seatek/BigBanana-AI-Director/components/*.tsx)"
+    ]
+  }
+}

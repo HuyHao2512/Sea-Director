@@ -1,0 +1,97 @@
+/* SpaceX Typography Utilities */
+
+/* Display Hero - 48px, Bold, Uppercase, Tight */
+.spacex-display-hero {
+  font-family: var(--font-display);
+  font-size: var(--text-display-hero);
+  font-weight: 700;
+  line-height: 1.0;
+  letter-spacing: var(--tracking-display);
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Navigation Bold - 13px, Bold, Uppercase, Tracked */
+.spacex-nav-bold {
+  font-family: var(--font-body);
+  font-size: var(--text-nav-bold);
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Navigation - 12px, Regular, Uppercase, Relaxed */
+.spacex-nav {
+  font-family: var(--font-body);
+  font-size: var(--text-nav);
+  font-weight: 400;
+  line-height: 2.0;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Body - 16px, Regular, Normal Case, Readable */
+.spacex-body {
+  font-family: var(--font-body);
+  font-size: var(--text-body);
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: var(--spectral-white);
+}
+
+/* Caption Bold - 13px, Bold, Uppercase, Tracked */
+.spacex-caption-bold {
+  font-family: var(--font-body);
+  font-size: var(--text-caption-bold);
+  font-weight: 700;
+  line-height: 0.94;
+  letter-spacing: var(--tracking-nav);
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Caption - 12px, Regular, Uppercase, Tight */
+.spacex-caption {
+  font-family: var(--font-body);
+  font-size: var(--text-caption);
+  font-weight: 400;
+  line-height: 1.0;
+  letter-spacing: normal;
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Micro - 10px, Regular, Uppercase, Tracked */
+.spacex-micro {
+  font-family: var(--font-body);
+  font-size: var(--text-micro);
+  font-weight: 400;
+  line-height: 0.94;
+  letter-spacing: var(--tracking-micro);
+  text-transform: uppercase;
+  color: var(--spectral-white);
+}
+
+/* Utility: Universal Uppercase */
+.spacex-uppercase {
+  text-transform: uppercase;
+}
+
+/* Utility: Display Tracking */
+.spacex-tracking-display {
+  letter-spacing: var(--tracking-display);
+}
+
+/* Utility: Navigation Tracking */
+.spacex-tracking-nav {
+  letter-spacing: var(--tracking-nav);
+}
+
+/* Utility: Micro Tracking */
+.spacex-tracking-micro {
+  letter-spacing: var(--tracking-micro);
+}

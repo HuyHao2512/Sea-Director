@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <!-- Init theme sớm để tránh flash -->
+    <script>
+      (function () {
+        var t = localStorage.getItem("aidirector_theme");
+        var validTheme = t === "light" || t === "spacex" ? t : "dark";
+        document.documentElement.setAttribute("data-theme", validTheme);
+      })();
+    </script>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>AI Director</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="/favicon.ico" />
+
+    <!-- Theme color -->
+    <meta name="theme-color" content="#050505" />
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Base CSS variables -->
+    <style>
+      :root {
+        --bg-base: #050505;
+        --bg-surface: #141414;
+        --border-secondary: #3f3f46;
+        --text-primary: #ffffff;
+        --text-secondary: #d4d4d8;
+        --text-tertiary: #a1a1aa;
+        --scrollbar-thumb: #333;
+        --scrollbar-thumb-hover: #555;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        background: var(--bg-base);
+        color: var(--text-secondary);
+        transition: background 0.2s ease, color 0.2s ease;
+      }
+
+      ::-webkit-scrollbar {
+        width: 6px;
+        height: 6px;
+      }
+
+      ::-webkit-scrollbar-thumb {
+        background: var(--scrollbar-thumb);
+      }
+
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--scrollbar-thumb-hover);
+      }
+
+      .glass-panel {
+        backdrop-filter: blur(12px);
+      }
+    </style>
+
+    <!-- Fonts -->
+    <link rel="stylesheet" href="/styles/fonts.css" />
+
+    <!-- Theme -->
+    <link rel="stylesheet" href="/styles/theme-dark.css" />
+    <link rel="stylesheet" href="/styles/theme-light.css" />
+    <link rel="stylesheet" href="/styles/theme-spacex.css" />
+
+    <!-- Typography -->
+    <link rel="stylesheet" href="/styles/spacex-typography.css" />
+
+    <!-- Fallbacks -->
+    <link rel="stylesheet" href="/styles/spacex-fallbacks.css" />
+
+    <!-- Import map -->
+    <script type="importmap">
+      {
+        "imports": {
+          "react": "https://aistudiocdn.com/react@^19.2.0",
+          "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+          "react/": "https://aistudiocdn.com/react@^19.2.0/",
+          "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0",
+          "lucide-react": "https://aistudiocdn.com/lucide-react@^0.554.0"
+        }
+      }
+    </script>
+  </head>
+
+  <body>
+    <div id="root"></div>
+
+    <!-- App -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

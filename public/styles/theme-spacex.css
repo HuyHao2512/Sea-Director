@@ -1,0 +1,120 @@
+/* SpaceX Theme - Minimal Black & Spectral White Palette */
+
+[data-theme="spacex"] {
+  /* Primary Palette */
+  --space-black: #000000;
+  --spectral-white: #f0f0fa;
+
+  /* Interactive Ghost Elements */
+  --ghost-surface: rgba(240, 240, 250, 0.1);
+  --ghost-border: rgba(240, 240, 250, 0.35);
+  --ghost-hover: rgba(240, 240, 250, 0.15);
+
+  /* Overlays */
+  --dark-overlay: rgba(0, 0, 0, 0.5);
+  --dark-overlay-heavy: rgba(0, 0, 0, 0.7);
+
+  /* Backgrounds - All Pure Black */
+  --bg-base: #000000;
+  --bg-primary: #000000;
+  --bg-secondary: #000000;
+  --bg-surface: rgba(0, 0, 0, 0.95);
+  --bg-elevated: rgba(0, 0, 0, 0.98);
+  --bg-deep: #000000;
+  --bg-sunken: #000000;
+  --bg-hover: rgba(240, 240, 250, 0.05);
+
+  /* Borders - Spectral Ghost */
+  --border-primary: rgba(240, 240, 250, 0.15);
+  --border-secondary: rgba(240, 240, 250, 0.35);
+  --border-subtle: rgba(240, 240, 250, 0.08);
+
+  /* Text - Spectral White Hierarchy */
+  --text-primary: #f0f0fa;
+  --text-secondary: rgba(240, 240, 250, 0.85);
+  --text-tertiary: rgba(240, 240, 250, 0.65);
+  --text-muted: rgba(240, 240, 250, 0.45);
+
+  /* Scrollbar */
+  --scrollbar-track: #000000;
+  --scrollbar-thumb: rgba(240, 240, 250, 0.2);
+  --scrollbar-thumb-hover: rgba(240, 240, 250, 0.35);
+
+  /* Glass Effects */
+  --glass-bg: rgba(0, 0, 0, 0.8);
+  --glass-border: rgba(240, 240, 250, 0.15);
+
+  /* Navigation */
+  --nav-active-bg: rgba(240, 240, 250, 0.1);
+  --nav-hover-bg: rgba(240, 240, 250, 0.05);
+
+  /* Buttons - Ghost Style */
+  --btn-primary-bg: rgba(240, 240, 250, 0.1);
+  --btn-primary-text: #f0f0fa;
+  --btn-primary-hover: rgba(240, 240, 250, 0.15);
+  --btn-primary-shadow: none;
+  --btn-selected-bg: rgba(240, 240, 250, 0.15);
+  --btn-selected-border: rgba(240, 240, 250, 0.35);
+
+  /* Overlays */
+  --overlay-heavy: rgba(0, 0, 0, 0.9);
+  --overlay-medium: rgba(0, 0, 0, 0.7);
+  --overlay-light: rgba(0, 0, 0, 0.5);
+  --overlay-full: rgba(0, 0, 0, 0.98);
+  --overlay-border: rgba(240, 240, 250, 0.15);
+
+  /* Selection */
+  --selection-bg: rgba(240, 240, 250, 0.2);
+
+  /* Accent - Spectral White */
+  --accent: #f0f0fa;
+  --accent-hover: #ffffff;
+  --accent-muted: rgba(240, 240, 250, 0.65);
+  --accent-bg: rgba(240, 240, 250, 0.1);
+  --accent-bg-hover: rgba(240, 240, 250, 0.15);
+  --accent-border: rgba(240, 240, 250, 0.35);
+  --accent-text: #f0f0fa;
+  --accent-text-hover: #ffffff;
+  --accent-on: #000000;
+  --accent-shadow: none;
+
+  /* Toggle/Switch */
+  --toggle-active: #f0f0fa;
+  --toggle-inactive: rgba(240, 240, 250, 0.2);
+  --toggle-knob: #000000;
+
+  /* Status Colors - Muted, Desaturated */
+  --success: rgba(52, 211, 153, 0.8);
+  --success-text: rgba(52, 211, 153, 1);
+  --success-bg: rgba(52, 211, 153, 0.1);
+  --success-border: rgba(52, 211, 153, 0.3);
+
+  --error: rgba(248, 113, 113, 0.8);
+  --error-text: rgba(248, 113, 113, 1);
+  --error-bg: rgba(248, 113, 113, 0.1);
+  --error-border: rgba(248, 113, 113, 0.3);
+  --error-hover-bg: rgba(248, 113, 113, 0.15);
+  --error-hover-bg-strong: rgba(248, 113, 113, 0.25);
+
+  --warning: rgba(251, 191, 36, 0.8);
+  --warning-text: rgba(251, 191, 36, 1);
+  --warning-bg: rgba(251, 191, 36, 0.1);
+  --warning-border: rgba(251, 191, 36, 0.3);
+
+  --info: rgba(96, 165, 250, 0.8);
+  --info-text: rgba(96, 165, 250, 1);
+  --info-bg: rgba(96, 165, 250, 0.1);
+  --info-border: rgba(96, 165, 250, 0.3);
+
+  /* Tag Colors */
+  --tag-purple: rgba(192, 132, 252, 0.8);
+  --tag-purple-bg: rgba(192, 132, 252, 0.1);
+  --tag-purple-border: rgba(192, 132, 252, 0.3);
+  --tag-purple-hover: rgba(192, 132, 252, 0.15);
+
+  /* Remove all shadows */
+  --shadow-sm: none;
+  --shadow-md: none;
+  --shadow-lg: none;
+  --shadow-xl: none;
+}
