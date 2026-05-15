@@ -1,4 +1,4 @@
-// Onboarding 常量配置
+// Cấu hình hằng số Onboarding
 
 export const ONBOARDING_STORAGE_KEY = 'aidirector_onboarding_completed';
 
@@ -12,66 +12,66 @@ export const ONBOARDING_PAGES = {
 
 export const TOTAL_PAGES = 5;
 
-// 工作流步骤
+// Các bước quy trình làm việc
 export const WORKFLOW_STEPS = [
   {
     number: '①',
-    title: '写剧本',
-    description: 'AI自动提取角色和场景',
+    title: 'Viết kịch bản',
+    description: 'AI tự động trích xuất nhân vật và cảnh',
   },
   {
     number: '②',
-    title: '定形象',
-    description: '角色参考图 + 造型九宫格',
+    title: 'Định hình ảnh',
+    description: 'Ảnh tham khảo nhân vật + Bảng tạo hình 9 ô',
   },
   {
     number: '③',
-    title: '排分镜',
-    description: '首尾帧/九宫格驱动视频生成',
+    title: 'Lên phân cảnh',
+    description: 'Khung đầu/cuối/Bảng 9 ô điều khiển tạo video',
   },
   {
     number: '④',
-    title: '导成片',
-    description: '合并导出完整短剧',
+    title: 'Xuất video',
+    description: 'Kết hợp xuất video ngắn hoàn chỉnh',
   },
 ] as const;
 
-// 核心亮点
+// Điểm nhấn cốt lõi
 export const HIGHLIGHTS = [
   {
     icon: '🎬',
-    title: '首尾帧衔接',
-    description: '可复制上一镜尾帧到下一镜首帧，镜头过渡更连贯',
+    title: 'Nối khung đầu cuối',
+    description: 'Có thể sao chép khung cuối cảnh trước sang khung đầu cảnh sau, chuyển cảnh mượt mà hơn',
   },
   {
     icon: '🧩',
-    title: '九宫格分镜',
-    description: '一键拆分9个视角，支持整图或裁剪格子设为首帧',
+    title: 'Phân cảnh 9 ô',
+    description: 'Chia 9 góc nhìn bằng một cú nhấp, hỗ trợ lấy toàn ảnh hoặc cắt ô làm khung hình đầu tiên',
   },
   {
     icon: '👔',
-    title: '角色衣橱',
-    description: '同一角色，多套造型随时切换',
+    title: 'Tủ đồ nhân vật',
+    description: 'Cùng một nhân vật, chuyển đổi nhiều tạo hình bất cứ lúc nào',
   },
   {
     icon: '🎨',
-    title: '风格统一',
-    description: '真人、动漫、3D任选，全片一致',
+    title: 'Phong cách thống nhất',
+    description: 'Tùy chọn người thật, anime, 3D, nhất quán toàn bộ video',
   },
 ] as const;
 
-// 快速开始选项
+// Tùy chọn bắt đầu nhanh
 export const QUICK_START_OPTIONS = [
   {
     id: 'script',
     icon: '📝',
-    title: '从剧本开始',
-    description: '粘贴你的故事，AI帮你拆分镜',
+    title: 'Bắt đầu từ kịch bản',
+    description: 'Dán câu chuyện của bạn, AI sẽ giúp bạn chia cảnh',
   },
   {
     id: 'example',
     icon: '🎬',
-    title: '看看示例项目',
-    description: '先逛逛别人怎么做的',
+    title: 'Xem dự án mẫu',
+    description: 'Tham khảo cách người khác làm',
   },
 ] as const;

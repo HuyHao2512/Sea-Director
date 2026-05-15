@@ -1,4 +1,4 @@
-﻿import React from 'react';
+import React from 'react';
 import { QUICK_START_OPTIONS } from './constants';
 import { FileText, Film } from 'lucide-react';
 
@@ -15,17 +15,17 @@ const icons = {
 const ActionPage: React.FC<ActionPageProps> = ({ onComplete, onQuickStart }) => {
   return (
     <div className="flex flex-col items-center text-center">
-      {/* 标题 */}
+      {/* Tiêu đề */}
       <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
-        现在就开始创作
+        Bắt đầu sáng tạo ngay bây giờ
       </h2>
 
-      {/* 说明文案 */}
+      {/* Văn bản giải thích */}
       <p className="text-[var(--text-tertiary)] text-sm mb-8">
-        选一个方式，马上体验
+        Chọn một phương thức, trải nghiệm ngay
       </p>
 
-      {/* 选项卡片 */}
+      {/* Thẻ tùy chọn */}
       <div className="w-full max-w-md space-y-3 mb-8">
         {QUICK_START_OPTIONS.map((option) => {
           const Icon = icons[option.id as keyof typeof icons];
@@ -50,17 +50,17 @@ const ActionPage: React.FC<ActionPageProps> = ({ onComplete, onQuickStart }) => 
         })}
       </div>
 
-      {/* 主按钮 */}
+      {/* Nút chính */}
       <button
         onClick={onComplete}
         className="px-8 py-3 bg-[var(--btn-primary-bg)] text-[var(--btn-primary-text)] font-bold text-sm rounded-lg hover:bg-[var(--btn-primary-hover)] transition-all duration-200 transform hover:scale-105"
       >
-        创建我的第一部短剧
+        Tạo bộ phim ngắn đầu tiên của tôi
       </button>
 
-      {/* 辅助入口 */}
+      {/* Lối vào phụ */}
       <p className="mt-6 text-[10px] text-[var(--text-muted)]">
-        以后可在侧边栏「帮助」中重新查看引导
+        Sau này có thể xem lại hướng dẫn ở "Trợ giúp" thanh bên
       </p>
     </div>
   );

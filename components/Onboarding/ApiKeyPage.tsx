@@ -40,7 +40,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         setVerifyStatus('success');
         setVerifyMessage('Xác thực thành công!');
         onSaveApiKey(inputKey.trim());
-        // 短暂延迟后进入下一步
+        // Đợi một chút rồi chuyển sang bước tiếp theo
         setTimeout(() => {
           onNext();
         }, 500);
@@ -58,7 +58,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
 
   return (
     <div className="flex flex-col items-center text-center">
-      {/* 图标 */}
+      {/* Biểu tượng */}
       <div className="relative mb-6">
         <div className="w-16 h-16 rounded-2xl bg-[var(--accent-bg)] border border-[var(--accent-border)] flex items-center justify-center">
           <Key className="w-8 h-8 text-[var(--accent-text)]" />
@@ -70,17 +70,17 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         )}
       </div>
 
-      {/* 标题 */}
+      {/* Tiêu đề */}
       <h2 className="text-2xl font-bold text-[var(--text-primary)] mb-2">
         Cấu hình Gemini API Key
       </h2>
 
-      {/* 说明 */}
+      {/* Mô tả */}
       <p className="text-[var(--text-tertiary)] text-sm mb-6 max-w-xs">
         Bạn cần có API Key để sử dụng các tính năng tạo nội dung bằng AI.
       </p>
 
-      {/* 使用预期提醒 */}
+      {/* Nhắc nhở sử dụng */}
       <div className="w-full max-w-sm mb-6 text-left border border-[var(--border-primary)] bg-[var(--bg-surface)]/60 rounded-lg p-3">
         <h3 className="text-xs font-bold text-[var(--text-primary)] mb-2">
           Lưu ý sử dụng
@@ -98,7 +98,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         </div>
       </div>
 
-      {/* 输入框 */}
+      {/* Ô nhập liệu */}
       <div className="w-full max-w-sm mb-4">
         <input
           type="password"
@@ -118,7 +118,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
           }}
         />
 
-        {/* 状态提示 */}
+        {/* Trạng thái */}
         {verifyMessage && (
           <div className={`mt-2 flex items-center justify-center gap-2 text-xs ${
             verifyStatus === 'success' ? 'text-[var(--success-text)]' : 'text-[var(--error-text)]'
@@ -133,7 +133,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         )}
       </div>
 
-      {/* 获取 Key 链接 */}
+      {/* Link nhận Key */}
       <div className="flex items-center gap-4 mb-8">
         <a 
           href="https://aistudio.google.com/app/apikey" 
@@ -154,7 +154,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         </a>
       </div>
 
-      {/* 主按钮 */}
+      {/* Nút chính */}
       <button
         onClick={handleVerifyAndContinue}
         disabled={isVerifying}
@@ -170,7 +170,7 @@ const ApiKeyPage: React.FC<ApiKeyPageProps> = ({
         )}
       </button>
 
-      {/* 跳过入口 */}
+      {/* Bỏ qua */}
       <button
         onClick={onSkip}
         className="mt-4 text-xs text-[var(--text-muted)] hover:text-[var(--text-tertiary)] transition-colors"
